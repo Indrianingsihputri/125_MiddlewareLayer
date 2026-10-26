@@ -117,3 +117,7 @@ function validateParams(schema) {
         next()
     }
 }
+
+app.get('/', async (req, res) => {
+    
+})
