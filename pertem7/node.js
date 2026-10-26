@@ -90,5 +90,8 @@ function validateBody(schema) {
                 }))
             )
         }
+
+        req.body = value
+        next()
     }
 }
