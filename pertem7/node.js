@@ -69,3 +69,10 @@ const boidataSchema = Joi.object({
 const idSchema = Joi.object({
     id: Joi.number().integer().positive().required(),
 })
+
+// Middleware untuk validasi body
+function validateBody(schema) {
+    return (req, res, next) => {
+        
+    }
+}
