@@ -149,3 +149,11 @@ app.post(
         )
     }
 )
+
+app.put(
+    '/biodata/:id',
+    validateParams(idSchema)
+    validateBody(biodataSchema.fork(
+        ['nama', 'nim', ]
+    ))
+)
