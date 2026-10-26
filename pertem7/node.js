@@ -36,3 +36,9 @@ app.use((req, res, next) => {
 
     next()
 })
+
+// RESPONSE ENVELOPE
+
+function errorResponse(res, massage, status, details = null) {
+    
+}
