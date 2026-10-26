@@ -95,3 +95,7 @@ function validateBody(schema) {
         next()
     }
 }
+
+// Middleware untuk validasi parameter ID
+function validateParams(schema) {
+}
