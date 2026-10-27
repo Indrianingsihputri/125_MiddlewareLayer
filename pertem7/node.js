@@ -174,5 +174,11 @@ app.put(
                 res, 'Data tidak ditemukan', 404
             )
         }
+
+        return successResponse(
+            res,
+            'Data berhasil diupdate',
+            result.rows[0]
+        )
     }
 )
